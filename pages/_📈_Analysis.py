@@ -25,8 +25,8 @@ from data import forecastingcodev2
 st.set_page_config(page_icon="🏭", page_title="Steelcase Data Analytics", layout="wide")
 
 # Main directory path ('Tool Dev')
-main_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
-st.session_state['directory'] = main_dir
+# main_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
+# st.session_state['directory'] = main_dir
 
 
 # Cache Data
@@ -34,7 +34,7 @@ st.session_state['directory'] = main_dir
 # Function for ingesting data
 def read_data():
     # Collecting data
-    data_path = main_dir + '/app/data/model_data3.csv'
+    data_path = 'data/model_data3.csv'
     # Call data class and parameters from data module
     data_obj = data_prep.IngestionPipe(features=consts.features, target=consts.target, dates=consts.dates,
                                        post_date=consts.clean_end_date, pre_date=consts.clean_start_date)
@@ -55,7 +55,7 @@ earliest_date = pd.to_datetime(data.clean_data['Scheduled_relevant_delivery_date
 # Trying to Put Logo in Top Right (Can use markdown)
 pic_col1, pic_col2, pic_col3 = st.columns(3, gap='large')
 steelcaseLogo = Image.open(
-    main_dir + '/app/assets/SteelcaseLogo.png')
+    'assets/SteelcaseLogo.png')
 with pic_col3:
     st.image(steelcaseLogo, width=100)
 

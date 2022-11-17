@@ -9,7 +9,7 @@ import plotly.figure_factory as ff
 import math
 
 # Main directory path ('Tool Dev')
-main_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
+# main_dir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
 import gui
 import MVEF
 
@@ -23,7 +23,7 @@ data_frame = data.clean_data
 # Trying to Put Logo in Top Right (Can use markdown)
 pic_col1, pic_col2, pic_col3 = st.columns(3, gap='large')
 steelcaseLogo = Image.open(
-    main_dir + '/app/assets/SteelcaseLogo.png')
+    'assets/SteelcaseLogo.png')
 with pic_col3:
     st.image(steelcaseLogo, width=100)
 
