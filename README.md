@@ -4,9 +4,9 @@
 - <ins> Data IO</ins> : Directory used for code that enables users to upload new data to streamlit. This directory was used for research. The actual code responsible for updating data is located in the pages directory in the data_input.py file.
 - <ins>DataSetup</ins>: Is a directory used for building a database for data given to us by Steelcase. This directory is no longer active and was only used for research.
 - <ins>Deliverables</ins>: A directory used for housing deliverables to Steelcase, such as the Final Report, the Presentation, and a Poster Summary of the project.
-- <ins>Jupyter_NB_Research</ins>: A directory containing very early scratch work. All relevant research can be found in the Analytics-Tool directory or with the ML_Model_Dev.
-- MIP_Model_Dev: A directory used for research efficacy of an MIP model to recommend suppliers. No longer active. 
-- ML_Model_Dev: A directory that was used for very early attempts at predicting supplier performance with machine learning models. Results were poor. No longer active. 
+- <ins>Jupyter_NB_Research</ins>: A directory containing very early scratch work. All relevant research can be found in the data directory or or in the  ML_Model_Dev directory.
+- <ins>MIP_Model_Dev</ins>: A directory used for research efficacy of an MIP model to recommend suppliers. No longer active. 
+- <ins>ML_Model_Dev</ins>: A directory that was used for very early attempts at predicting supplier performance with machine learning models. Results were poor. No longer active. 
 
 
 - Assets contains non code assets used
