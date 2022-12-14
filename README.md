@@ -9,3 +9,11 @@
 - Jupyter_NB_Research: A directory containing very early scratch work. All relevant research can be found in the Analytics-Tool directory or with the ML_Model_Dev.
 - MIP_Model_Dev: A directory used for research efficacy of an MIP model to recommend suppliers. No longer active. 
 - ML_Model_Dev: A directory that was used for very early attempts at predicting supplier performance with machine learning models. Results were poor. No longer active. 
+
+
+- Assets contains non code assets used
+- data contains data used and relevant research
+- pages contains code used to build the pages of the app.
+- homepage.py is the code used to build the homepage of the app.
+- gui.py is a file used to help format the app.
+- MVEF.py is a script which is used to generate the recommendations for the recommendations page.
