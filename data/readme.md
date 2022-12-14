@@ -2,11 +2,11 @@
 
 This directory contains data used to create the streamllit app, as well as relevant research into how to create many of the functions the app posesses, such as the recommendations.
 
-- Auto_Arima_Forecasting.ipynb is a notebook that contains research on how to better forecast supplier performance.
-- consts.py is a file containing lists of data to be used in the data object creation.
-- data_prep.py is a file that is used to clean and prep data for modeling purposed and for streamlit injection.
-- forecastingcodev2.py is another later iteration of the code in Auto_Arima_Forecasting.ipynb but in script form
-- model_data, model_data1, model_data2, model_data3, are all files containing iterations of data used to build the streamlit app.
+- <ins> Auto_Arima_Forecasting.ipynb </ins>: A notebook that contains research on how to better forecast supplier performance.
+- <ins> consts.py </ins>: Is a file containing lists of data to be used in the data object creation.
+- data_prep.py Is a file that is used to clean and prep data for modeling purposed and for streamlit injection.
+- forecastingcodev2.py Is another later iteration of the code in Auto_Arima_Forecasting.ipynb but in script form
+- model_data, model_data1, model_data2, model_data3, Are all files containing iterations of data used to build the streamlit app.
     model_data3 is the data set which the app currently uses.
 - MVEF.py is the python script housing the functions to generate and interpret the mean-variance results for suppliers in a material group. This is used in the streamlit app recommendations page.
 - MVEF_test.ipynb is file that was used to test the accuracy of the MVEF.py file
