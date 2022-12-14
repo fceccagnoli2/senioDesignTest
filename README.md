@@ -9,7 +9,7 @@
 - <ins>MIP_Model_Dev</ins>: A directory used for research efficacy of an MIP model to recommend suppliers. No longer active. 
 - <ins>ML_Model_Dev</ins>: A directory that was used for very early attempts at predicting supplier performance with machine learning models. Results were poor. No longer active. 
 
-*The following direcories all contain code that is <ins>live</ins> in runnning the Streamlit App*
+*The following directories all contain code that is <ins>live</ins> in runnning the Streamlit App*
 - <ins>Assets</ins>: Contains non code assets used in the app, such as images.
 - <ins>data</ins>: Contains data used and relevant research into recommendation algorithms.
 - <ins>pages</ins>: Contains code used to build the pages of the app. All pages besides the homepage can be found here.
