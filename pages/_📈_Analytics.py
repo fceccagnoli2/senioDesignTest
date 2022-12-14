@@ -221,14 +221,19 @@ def performance_over_time():
         viz_data =viz_data[viz_data[entity_map[lod]].isin(lod_filter)]
         ent = entity_map[lod]
         viz_data['late_bin'] = viz_data.groupby([ent])['late_bin'].ffill()
-
+        
+        #Link vendor number to supplier name
+        supplier_map = requested_data_p['Supplier'].to_list()
+        number_map = requested_data_p['Vendor_number'].to_list()
+        supplier_to_number = dict(zip(supplier_map, number_map))
+        
         #Plot GSCPI
         dl_fig1.add_trace(go.Scatter(
             x=indexDataUsed["Date"],
             y=indexDataUsed["Value"],
             name="Global Supply Chain Pressure Index (GSCPI)"),
             secondary_y=True)
-
+        
         #Handle foreacsting
         if forecast_check:
 
@@ -239,6 +244,11 @@ def performance_over_time():
                 entity_data = viz_data[viz_data[entity_map[lod]] == entity]
                 entity_data['Forecast'] = 'Supplier Data'
                 entity_data = entity_data.dropna()
+                entity_chosen = entity_data['Supplier'].to_list()
+                new_numbers = []
+                for sup in entity_chosen:
+                    new_numbers.append(supplier_to_number[sup])
+                entity_data['Vendor_number'] = new_numbers
 
                 #Handle issue when there is not enough data to forecast
                 try:
