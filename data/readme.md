@@ -1,4 +1,4 @@
-This directory contains data used to create the streamllit app, as well as relevant research into how to create many of the functions the app posesses, such as the recommendations.
+# This directory contains data used to create the streamllit app, as well as relevant research into how to create many of the functions the app posesses, such as the recommendations.
 
 -Auto_Arima_Forecasting.ipynb is a notebook that contains research on how to better forecast supplier performance.
 -consts.py is a file containing lists of data to be used in the data object creation.
